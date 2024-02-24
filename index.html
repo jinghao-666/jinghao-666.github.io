@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>🎀Senpai WWE</title>
+    <link href="https://senpai0523.github.io/back/favicon.png" rel="shortcut icon">
+    <link href="//vjs.zencdn.net/8.10.0/video-js.min.css" rel="stylesheet">
+    <script src="//vjs.zencdn.net/8.10.0/video.min.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.7.1/jquery.js"></script>
+    <style>
+        .video-js .vjs-tech {
+            margin: auto;
+            position: relative !important;
+        }
+        .main{
+            width: 960px;
+            margin: auto;
+            color:white;font-size:25px;
+        }
+        .lang{
+            font-size:17px;
+            text-align: center;
+        }
+        .wangpan{
+            line-height: 60px;
+            font-size:27px;
+            text-align: center;
+            color: rgb(0, 149, 255);
+        }
+        .music{
+            line-height: 50px;
+            font-size:21px;
+            text-align: center;
+            color: rgb(255, 213, 0);
+        }
+        body{
+            background-color: black;
+        }
+    </style>
+</head>
+<body">
+    <div class="main">
+        <p>【直播】WWE Elimination Chamber 铁笼密室 2024/02/24 18:00</p>
+        <div>
+            <video id="myVideo" class="video-js vjs-default-skin vjs-big-play-centered" controls preload="auto"
+                data-setup='{}' style='width:100%;height:100%'>
+                <source id="source"
+                    src="https://cn-hbyc-ct-02-09.bilivideo.com/live-bvc/238716/live_23755234_bs_3437085/index.m3u8?expires=1708770816&len=0&oi=2871594489&pt=web&qn=10000&trid=1007c3de8b1a22af4e62abf7ca24c8b8dfe9&sigparams=cdn,expires,len,oi,pt,qn,trid&cdn=cn-gotcha01&sign=6438dbcaeda0cdeacde5d60f9ba03349&sk=d6c2560d857e91adb3728484a35c38dd&flvsk=4a62bbb207e9f5f410f07f2ad44d465c&p2p_type=1&sl=1&free_type=0&mid=385212573&sid=cn-hbyc-ct-02-09&chash=0&bmt=1&sche=ban&bvchls=1&score=12&pp=rtmp&source=onetier&trace=911&site=cfb40ccea3bfccf0351f405405c78104&zoneid_l=151388161&sid_l=live_23755234_bs_3437085&order=1"
+                    type="application/x-mpegURL">
+                </source>
+            </video>
+
+            <div class="lang">
+                <span>选择语言：</span>
+                <select class="select">
+                    <option value="1">1080P 中文解说</option>
+                    <option value="2">1080P 英文解说</option>
+                </select>
+            </div>
+        </div>
+    </div>
+<hr>
+<div align="center">
+    <a href="https://music.163.com/#/user/home?id=532031897"target="_blank" class="music">我的网易云</a>
+</div>
+</body>
+<script>
+    let myVideo = null;
+    window.onload = function () {
+        myVideo = videojs('myVideo', {
+            controls: true,
+            bigPlayButton: true,
+            textTrackDisplay: false,
+            posterImage: false,
+            errorDisplay: false,
+        })
+        changeVideo(videoData.url1)
+    }
+    let videoData = {
+        url1: 'https://cn-hbyc-ct-02-09.bilivideo.com/live-bvc/238716/live_23755234_bs_3437085/index.m3u8?expires=1708770816&len=0&oi=2871594489&pt=web&qn=10000&trid=1007c3de8b1a22af4e62abf7ca24c8b8dfe9&sigparams=cdn,expires,len,oi,pt,qn,trid&cdn=cn-gotcha01&sign=6438dbcaeda0cdeacde5d60f9ba03349&sk=d6c2560d857e91adb3728484a35c38dd&flvsk=4a62bbb207e9f5f410f07f2ad44d465c&p2p_type=1&sl=1&free_type=0&mid=385212573&sid=cn-hbyc-ct-02-09&chash=0&bmt=1&sche=ban&bvchls=1&score=12&pp=rtmp&source=onetier&trace=911&site=cfb40ccea3bfccf0351f405405c78104&zoneid_l=151388161&sid_l=live_23755234_bs_3437085&order=1',
+        url2: 'https://cn-hnld-ct-01-45.bilivideo.com/live-bvc/266576/live_23413452_bs_1395000/index.m3u8?expires=1708770875&len=0&oi=2871594489&pt=web&qn=10000&trid=100703d0514432fc47c582ba2aaa6dc84d06&sigparams=cdn,expires,len,oi,pt,qn,trid&cdn=cn-gotcha01&sign=106b8929a510eb9a7be5f00e2e6a5ab7&sk=2f595588056aa1bd286fd1fad2dbda84&flvsk=9cd146e8a649530773206ec9349f1403&p2p_type=1&sl=1&free_type=0&mid=385212573&sid=cn-hnld-ct-01-45&chash=1&bmt=1&sche=ban&bvchls=1&score=2&pp=rtmp&source=onetier&trace=1099&site=9c25db54643a19e80cd5f38626d34f19&zoneid_l=151388161&sid_l=stream_name_cold&order=1',
+    }
+
+    let changeVideo = function (vdoSrc) {
+        if (/\.m3u8$/.test(vdoSrc)) {
+            myVideo.src({
+                src: vdoSrc,
+                type: 'application/x-mpegURL'
+            })
+        } else {
+            myVideo.src(vdoSrc)
+        }
+        myVideo.load();
+        myVideo.play();
+    }
+    $('.select').on('change', function () {
+        let val = $(this).val();
+        switch (val) {
+            case '1': changeVideo(videoData.url1); break;
+            case '2': changeVideo(videoData.url2); break;
+            default: changeVideo(videoData.url3);
+        }   <!--丨-->
+    })
+</script>
+</html>
