@@ -1,105 +1,168 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
+<html lang="zh-CN"><head>
     <meta charset="UTF-8">
-    <title>🎀Senpai WWE</title>
-    <link href="https://senpai0523.github.io/back/favicon.png" rel="shortcut icon">
-    <link href="//vjs.zencdn.net/8.10.0/video-js.min.css" rel="stylesheet">
-    <script src="//vjs.zencdn.net/8.10.0/video.min.js"></script>
-    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.7.1/jquery.js"></script>
-    <style>
-        .video-js .vjs-tech {
-            margin: auto;
-            position: relative !important;
-        }
-        .main{
-            width: 960px;
-            margin: auto;
-            color:white;font-size:25px;
-        }
-        .lang{
-            font-size:17px;
-            text-align: center;
-        }
-        .wangpan{
-            line-height: 60px;
-            font-size:27px;
-            text-align: center;
-            color: rgb(0, 149, 255);
-        }
-        .music{
-            line-height: 50px;
-            font-size:21px;
-            text-align: center;
-            color: rgb(255, 213, 0);
-        }
-        body{
-            background-color: black;
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>景豪 - 个人简历</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&amp;display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
-<body">
-    <div class="main">
-        <p>【直播】WWE Elimination Chamber 铁笼密室 2024/02/24 18:00</p>
-        <div>
-            <video id="myVideo" class="video-js vjs-default-skin vjs-big-play-centered" controls preload="auto"
-                data-setup='{}' style='width:100%;height:100%'>
-                <source id="source"
-                    src="https://cn-hbyc-ct-02-09.bilivideo.com/live-bvc/238716/live_23755234_bs_3437085/index.m3u8?expires=1708770816&len=0&oi=2871594489&pt=web&qn=10000&trid=1007c3de8b1a22af4e62abf7ca24c8b8dfe9&sigparams=cdn,expires,len,oi,pt,qn,trid&cdn=cn-gotcha01&sign=6438dbcaeda0cdeacde5d60f9ba03349&sk=d6c2560d857e91adb3728484a35c38dd&flvsk=4a62bbb207e9f5f410f07f2ad44d465c&p2p_type=1&sl=1&free_type=0&mid=385212573&sid=cn-hbyc-ct-02-09&chash=0&bmt=1&sche=ban&bvchls=1&score=12&pp=rtmp&source=onetier&trace=911&site=cfb40ccea3bfccf0351f405405c78104&zoneid_l=151388161&sid_l=live_23755234_bs_3437085&order=1"
-                    type="application/x-mpegURL">
-                </source>
-            </video>
 
-            <div class="lang">
-                <span>选择语言：</span>
-                <select class="select">
-                    <option value="1">1080P 中文解说</option>
-                    <option value="2">1080P 英文解说</option>
-                </select>
+<body>
+    <div class="card">
+        <div class="header">
+            <img class="avatar" src="https://picsum.photos/200/200" alt="景豪">
+            <div class="name-contact">
+                <div class="name">景豪</div>
+                <div class="position">Java后端开发工程师</div>
+                <div class="contact">
+                    <a href="tel:13812345678"><i class="fa-solid fa-phone"></i> 电话: 19929284001</a>
+                    <a href="mailto:liming@mail.xidian.edu.cn"><i class="fa-solid fa-envelope"></i> 邮箱: jinghao2014@qq.com</a>
+                    <a href="#"><i class="fa-brands fa-weixin"></i> 微信: jh-123456666</a>
+                    <a href="https://github.com/liming"><i class="fa-brands fa-github"></i> GitHub: liming</a>
+                </div>
             </div>
         </div>
+        <div class="intro fade-in">
+            <p>我是景豪，毕业于西安电子科技大学，生物医学工程学位。在校期间，专注于Java后端技术栈的学习与实践，参与课题组多个项目开发。熟悉Spring Boot3、SSM等框架，具备良好的数据库设计与开发能力。善于分析和解决问题，有较强的学习能力和团队协作精神，期待加入贵公司，为企业发展贡献力量。</p>
+        </div>
+        <div class="section fade-in">
+            <h2>教育背景</h2>
+            <div class="timeline-item">
+                <h3>西安电子科技大学 - 生物医学工程 - 硕士</h3>
+                <p>2023 - 2026</p>
+                <ul>
+                    <li>主修课程：模式识别、算法设计与分析、Java编程、数据库原理与应用等</li>
+                    <li>研究方向：分布式系统与云计算，参与"基于容器化技术的分布式应用部署平台"校级科研项目</li>
+                    <li>获得研究生国家奖学金、优秀研究生干部称号</li>
+                </ul>
+            </div>
+            <div class="timeline-item">
+                <h3>合肥工业大学 - 本科</h3>
+                <p>2019 - 2023</p>
+                <ul>
+                    <li>主修课程：程序设计基础、MATLAB、Python程序设计等</li>
+                    <li>参与"校园在线学习平台"项目开发，负责后端接口设计与实现</li>
+                    <li>获得校优秀毕业生、校优秀学生干部称号</li>
+                </ul>
+            </div>
+        </div>
+        <div class="section fade-in">
+            <h2>项目经验</h2>
+            <div class="timeline-item">
+                <h3>基于微服务架构的电商系统</h3>
+                <p>2023.10 - 2024.04</p>
+                <ul>
+                    <li>项目描述：设计并实现一个基于Spring Cloud微服务架构的电商系统，包括用户服务、商品服务、订单服务、支付服务等</li>
+                    <li>技术栈：Spring Boot、Spring Cloud、MyBatis、MySQL、Redis、RabbitMQ、Docker、Kubernetes</li>
+                    <li>责任：负责订单服务和支付服务的设计与实现，包括订单创建、支付处理、库存扣减等核心业务逻辑</li>
+                    <li>成果：完成订单服务和支付服务的开发与测试，实现了分布式事务管理，系统吞吐量达到1000TPS</li>
+                </ul>
+            </div>
+            <div class="timeline-item">
+                <h3>智能校园考勤管理系统</h3>
+                <p>2022.03 - 2022.06</p>
+                <ul>
+                    <li>项目描述：设计并实现一个基于人脸识别技术的校园考勤管理系统，包括学生信息管理、考勤记录、统计分析等功能</li>
+                    <li>技术栈：Spring Boot、MyBatis、MySQL、Vue.js、Element UI、OpenCV</li>
+                    <li>责任：负责后端系统架构设计和核心模块开发，包括用户认证、权限管理、考勤记录等</li>
+                    <li>成果：系统成功部署并在学校部分班级试用，提高了考勤效率和准确性</li>
+                </ul>
+            </div>
+            <div class="timeline-item">
+                <h3>在线教育平台</h3>
+                <p>2021.09 - 2021.12</p>
+                <ul>
+                    <li>项目描述：设计并实现一个在线教育平台，包括课程展示、在线学习、作业提交、考试测评等功能</li>
+                    <li>技术栈：Spring Boot、Spring Security、MyBatis、MySQL、Thymeleaf</li>
+                    <li>责任：负责用户认证和权限管理模块开发，实现基于JWT的身份认证和基于RBAC的权限控制</li>
+                    <li>成果：完成用户认证和权限管理模块的开发与测试，系统安全性能得到保障</li>
+                </ul>
+            </div>
+        </div>
+        <div class="section fade-in">
+            <h2>专业技能</h2>
+            <div class="skills-container">
+                <div class="progress-container">
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 90%;">Java核心 - 90%</div>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 85%;">Spring框架 - 85%</div>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 80%;">数据库设计与开发 - 80%</div>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 75%;">微服务架构 - 75%</div>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 70%;">Linux系统与Shell编程 - 70%</div>
+                    </div>
+                </div>
+                <div class="radar-container">
+                    <canvas class="radar-chart" id="radarChart"></canvas>
+                </div>
+            </div>
+            <script>
+                const ctx = document.getElementById('radarChart').getContext('2d');
+                const myRadarChart = new Chart(ctx, {
+                    type: 'radar',
+                    data: {
+                        labels: ['Java核心', 'Spring框架', '数据库', '微服务', 'Linux系统与Shell编程'],
+                        datasets: [{
+                            label: '技能水平',
+                            data: [90, 85, 80, 75, 70],
+                            backgroundColor: 'rgba(0, 123, 255, 0.2)',
+                            borderColor: 'rgba(0, 123, 255, 1)',
+                            borderWidth: 1
+                        }]
+                    },
+                    options: {
+                        scales: {
+                            r: {
+                                min: 0,
+                                max: 100
+                            }
+                        }
+                    }
+                });
+            </script>
+        </div>
+        <div class="section fade-in">
+            <h2>获奖情况</h2>
+            <div class="timeline-item">
+                <h3>2023年 研究生国家奖学金</h3>
+                <p>西安电子科技大学</p>
+            </div>
+            <div class="timeline-item">
+                <h3>2022年 全国大学生软件设计大赛二等奖</h3>
+                <p>教育部高等教育司</p>
+            </div>
+            <div class="timeline-item">
+                <h3>2021年 华为ICT大赛（中国区）三等奖</h3>
+                <p>华为技术有限公司</p>
+            </div>
+        </div>
+        <div class="section fade-in">
+            <h2>个人评价</h2>
+            <ul>
+                <li>扎实的Java基础知识，熟悉常用设计模式和数据结构算法</li>
+                <li>熟悉Spring、Spring Boot、MyBatis等Java开发框架</li>
+                <li>良好的数据库设计和开发能力，熟悉MySQL、Oracle等关系型数据库，了解Redis等非关系型数据库</li>
+                <li>具备良好的编程习惯和代码规范，注重代码质量和可维护性</li>
+                <li>有较强的学习能力和问题解决能力，能快速掌握新技术并应用到实际项目中</li>
+                <li>良好的团队协作精神和沟通能力，能与团队成员有效合作完成项目开发</li>
+            </ul>
+        </div>
+        <div class="footer-contact">
+            <a href="tel:19929284001"><i class="fa-solid fa-phone"></i></a>
+            <a href="mailto:liming@mail.xidian.edu.cn"><i class="fa-solid fa-envelope"></i></a>
+            <a href="#"><i class="fa-brands fa-weixin"></i></a>
+            <a href="https://github.com/liming"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.zhihu.com/people/liming"><i class="fa-brands fa-zhihu"></i></a>
+        </div>
     </div>
-<hr>
-<div align="center">
-    <a href="https://music.163.com/#/user/home?id=532031897"target="_blank" class="music">我的网易云</a>
-</div>
-</body>
-<script>
-    let myVideo = null;
-    window.onload = function () {
-        myVideo = videojs('myVideo', {
-            controls: true,
-            bigPlayButton: true,
-            textTrackDisplay: false,
-            posterImage: false,
-            errorDisplay: false,
-        })
-        changeVideo(videoData.url1)
-    }
-    let videoData = {
-        url1: 'https://cn-hbyc-ct-02-09.bilivideo.com/live-bvc/238716/live_23755234_bs_3437085/index.m3u8?expires=1708770816&len=0&oi=2871594489&pt=web&qn=10000&trid=1007c3de8b1a22af4e62abf7ca24c8b8dfe9&sigparams=cdn,expires,len,oi,pt,qn,trid&cdn=cn-gotcha01&sign=6438dbcaeda0cdeacde5d60f9ba03349&sk=d6c2560d857e91adb3728484a35c38dd&flvsk=4a62bbb207e9f5f410f07f2ad44d465c&p2p_type=1&sl=1&free_type=0&mid=385212573&sid=cn-hbyc-ct-02-09&chash=0&bmt=1&sche=ban&bvchls=1&score=12&pp=rtmp&source=onetier&trace=911&site=cfb40ccea3bfccf0351f405405c78104&zoneid_l=151388161&sid_l=live_23755234_bs_3437085&order=1',
-        url2: 'https://cn-hnld-ct-01-45.bilivideo.com/live-bvc/266576/live_23413452_bs_1395000/index.m3u8?expires=1708770875&len=0&oi=2871594489&pt=web&qn=10000&trid=100703d0514432fc47c582ba2aaa6dc84d06&sigparams=cdn,expires,len,oi,pt,qn,trid&cdn=cn-gotcha01&sign=106b8929a510eb9a7be5f00e2e6a5ab7&sk=2f595588056aa1bd286fd1fad2dbda84&flvsk=9cd146e8a649530773206ec9349f1403&p2p_type=1&sl=1&free_type=0&mid=385212573&sid=cn-hnld-ct-01-45&chash=1&bmt=1&sche=ban&bvchls=1&score=2&pp=rtmp&source=onetier&trace=1099&site=9c25db54643a19e80cd5f38626d34f19&zoneid_l=151388161&sid_l=stream_name_cold&order=1',
-    }
+    <script src="./js/script.js"></script>
 
-    let changeVideo = function (vdoSrc) {
-        if (/\.m3u8$/.test(vdoSrc)) {
-            myVideo.src({
-                src: vdoSrc,
-                type: 'application/x-mpegURL'
-            })
-        } else {
-            myVideo.src(vdoSrc)
-        }
-        myVideo.load();
-        myVideo.play();
-    }
-    $('.select').on('change', function () {
-        let val = $(this).val();
-        switch (val) {
-            case '1': changeVideo(videoData.url1); break;
-            case '2': changeVideo(videoData.url2); break;
-            default: changeVideo(videoData.url3);
-        }   <!--丨-->
-    })
-</script>
-</html>
+    </body></html>

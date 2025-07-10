@@ -1,0 +1,206 @@
+:root {
+    --bg-color: #f4f4f4;
+    --card-bg-color: #ffffff;
+    --text-color: #333333;
+    --link-color: #007BFF;
+    --link-hover-color: #0056b3;
+    --divider-color: #e8e8e8;
+    --progress-bg-color: #e9ecef;
+    --progress-bar-color: #007BFF;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+.card {
+    background-color: var(--card-bg-color);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 50px auto;
+    max-width: 85%;
+    padding: 30px;
+    transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.avatar {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.avatar:hover {
+    transform: scale(1.1);
+}
+
+.name-contact {
+    flex-grow: 1;
+    margin-left: 20px;
+}
+
+.name {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.position {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.contact {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.contact a {
+    color: var(--link-color);
+    text-decoration: none;
+    margin-right: 15px;
+    transition: color 0.3s ease;
+}
+
+.contact a:hover {
+    color: var(--link-hover-color);
+}
+
+.intro {
+    font-family: 'Dancing Script', cursive;
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 30px;
+}
+
+.intro::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background-color: var(--link-color);
+}
+
+.section {
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.section:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: var(--divider-color);
+}
+
+.section h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+}
+
+.timeline-item {
+    margin-bottom: 20px;
+}
+
+.timeline-item h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.timeline-item p {
+    margin: 0;
+    line-height: 1.6;
+}
+
+.progress-bar {
+    background-color: var(--progress-bg-color);
+    border-radius: 5px;
+    height: 20px;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.progress {
+    background-color: var(--progress-bar-color);
+    border-radius: 5px;
+    height: 100%;
+    text-align: left;
+    padding-left: 10px;
+    color: white;
+    font-size: 14px;
+}
+
+.radar-chart {
+    width: 100%;
+    height: 230px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    animation: fadeIn 1s ease-out;
+}
+
+.skills-container {
+    display: flex;
+    gap: 20px;
+}
+
+.progress-container {
+    flex: 1;
+}
+
+.radar-container {
+    flex: 1;
+}
+
+.footer-contact {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.footer-contact a {
+    color: var(--link-color);
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+
+.footer-contact a:hover {
+    color: var(--link-hover-color);
+}
