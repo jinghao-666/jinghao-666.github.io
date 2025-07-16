@@ -2,6 +2,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>景豪 - 个人简历</title>
+    <!-- 引入字体图标 -->
+    <link rel="icon" href="https://img.icons8.com/?size=100&id=ofENXNKVnDtV&format=png&color=000000" type="image/png">
     <link rel="stylesheet" href="./css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&amp;display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
@@ -17,23 +19,28 @@
                 <div class="position">Java后端开发工程师</div>
                 <div class="contact">
                     <a href="tel:13812345678"><i class="fa-solid fa-phone"></i> 电话: 19929284001</a>
-                    <a href="mailto:liming@mail.xidian.edu.cn"><i class="fa-solid fa-envelope"></i> 邮箱: jinghao2014@qq.com</a>
+                    <a href="mailTo:jinghao2014@qq.com"><i class="fa-solid fa-envelope"></i> 邮箱: jinghao2014@qq.com</a>
                     <a href="#"><i class="fa-brands fa-weixin"></i> 微信: jh-123456666</a>
-                    <a href="https://github.com/liming"><i class="fa-brands fa-github"></i> GitHub: liming</a>
+                    <a href="https://github.com/jinghao-666"><i class="fa-brands fa-github"></i> GitHub: jinghao-666</a>
                 </div>
             </div>
         </div>
         <div class="intro fade-in">
-            <p>我是景豪，毕业于西安电子科技大学，生物医学工程学位。在校期间，专注于Java后端技术栈的学习与实践，参与课题组多个项目开发。熟悉Spring Boot3、SSM等框架，具备良好的数据库设计与开发能力。善于分析和解决问题，有较强的学习能力和团队协作精神，期待加入贵公司，为企业发展贡献力量。</p>
+            <p>
+            我是景豪，毕业于西安电子科技大学，生物医学工程学位。
+            在校期间，专注于Java后端技术栈的学习与实践，参与课题组多个项目开发。熟悉Spring Boot3、SSM等框架，具备良好的数据库设计与开发能力。
+            善于分析和解决问题，有较强的学习能力和团队协作精神，期待加入贵公司，为企业发展贡献力量。
+            </p>
         </div>
         <div class="section fade-in">
-            <h2>教育背景</h2>
+            <h2><i class="fa-solid fa-school" style="color: var(--link-color); margin-right: 10px;"></i>教育背景</h2>
             <div class="timeline-item">
                 <h3>西安电子科技大学 - 生物医学工程 - 硕士</h3>
                 <p>2023 - 2026</p>
                 <ul>
                     <li>主修课程：模式识别、算法设计与分析、Java编程、数据库原理与应用等</li>
-                    <li>研究方向：分布式系统与云计算，参与"基于容器化技术的分布式应用部署平台"校级科研项目</li>
+                    <li>研究方向：脑电信号的计算与分析；基于Java的脑电信号分析系统设计与实现</li>
+                    <li>参与"基于容器化技术的分布式应用部署平台"校级科研项目</li>
                     <li>获得研究生国家奖学金、优秀研究生干部称号</li>
                 </ul>
             </div>
@@ -48,13 +55,13 @@
             </div>
         </div>
         <div class="section fade-in">
-            <h2>项目经验</h2>
+            <h2><i class="fa-solid fa-briefcase" style="color: var(--link-color); margin-right: 10px;"></i>项目经验</h2>
             <div class="timeline-item">
                 <h3>基于微服务架构的电商系统</h3>
                 <p>2023.10 - 2024.04</p>
                 <ul>
-                    <li>项目描述：设计并实现一个基于Spring Cloud微服务架构的电商系统，包括用户服务、商品服务、订单服务、支付服务等</li>
-                    <li>技术栈：Spring Boot、Spring Cloud、MyBatis、MySQL、Redis、RabbitMQ、Docker、Kubernetes</li>
+                    <li>项目描述：设计并实现一个基于Spring Boot的电商系统，包括用户服务、商品服务、订单服务、秒杀服务等</li>
+                    <li>技术栈：Spring Boot、MyBatis、MyBatis-Plus、MySQL、Redis</li>
                     <li>责任：负责订单服务和支付服务的设计与实现，包括订单创建、支付处理、库存扣减等核心业务逻辑</li>
                     <li>成果：完成订单服务和支付服务的开发与测试，实现了分布式事务管理，系统吞吐量达到1000TPS</li>
                 </ul>
@@ -81,7 +88,7 @@
             </div>
         </div>
         <div class="section fade-in">
-            <h2>专业技能</h2>
+            <h2><i class="fa fa-cogs" style="color: var(--link-color); margin-right: 10px;"></i> 专业技能</h2>
             <div class="skills-container">
                 <div class="progress-container">
                     <div class="progress-bar">
@@ -94,7 +101,7 @@
                         <div class="progress" style="width: 80%;">数据库设计与开发 - 80%</div>
                     </div>
                     <div class="progress-bar">
-                        <div class="progress" style="width: 75%;">微服务架构 - 75%</div>
+                        <div class="progress" style="width: 75%;">RESTful API编程 - 75%</div>
                     </div>
                     <div class="progress-bar">
                         <div class="progress" style="width: 70%;">Linux系统与Shell编程 - 70%</div>
@@ -109,7 +116,7 @@
                 const myRadarChart = new Chart(ctx, {
                     type: 'radar',
                     data: {
-                        labels: ['Java核心', 'Spring框架', '数据库', '微服务', 'Linux系统与Shell编程'],
+                        labels: ['Java核心', 'Spring框架', '数据库', 'RESTful API', 'Linux系统与Shell编程'],
                         datasets: [{
                             label: '技能水平',
                             data: [90, 85, 80, 75, 70],
@@ -130,7 +137,7 @@
             </script>
         </div>
         <div class="section fade-in">
-            <h2>获奖情况</h2>
+            <h2><i class="fa-solid fa-medal" style="color: var(--link-color); margin-right: 10px;"></i>获奖情况</h2>
             <div class="timeline-item">
                 <h3>2023年 研究生国家奖学金</h3>
                 <p>西安电子科技大学</p>
@@ -145,10 +152,10 @@
             </div>
         </div>
         <div class="section fade-in">
-            <h2>个人评价</h2>
+            <h2><i class="fa-solid fa-comment" style="color: var(--link-color); margin-right: 10px;"></i>个人评价</h2>
             <ul>
                 <li>扎实的Java基础知识，熟悉常用设计模式和数据结构算法</li>
-                <li>熟悉Spring、Spring Boot、MyBatis等Java开发框架</li>
+                <li>熟悉Spring、Spring Boot、MyBatis、MyBatis-Plus等Java开发框架</li>
                 <li>良好的数据库设计和开发能力，熟悉MySQL、Oracle等关系型数据库，了解Redis等非关系型数据库</li>
                 <li>具备良好的编程习惯和代码规范，注重代码质量和可维护性</li>
                 <li>有较强的学习能力和问题解决能力，能快速掌握新技术并应用到实际项目中</li>
@@ -157,10 +164,9 @@
         </div>
         <div class="footer-contact">
             <a href="tel:19929284001"><i class="fa-solid fa-phone"></i></a>
-            <a href="mailto:liming@mail.xidian.edu.cn"><i class="fa-solid fa-envelope"></i></a>
+            <a href="mailTo:jinghao2014@qq.com"><i class="fa-solid fa-envelope"></i></a>
             <a href="#"><i class="fa-brands fa-weixin"></i></a>
-            <a href="https://github.com/liming"><i class="fa-brands fa-github"></i></a>
-            <a href="https://www.zhihu.com/people/liming"><i class="fa-brands fa-zhihu"></i></a>
+            <a href="https://github.com/jinghao-666"><i class="fa-brands fa-github"></i></a>
         </div>
     </div>
     <script src="./js/script.js"></script>
